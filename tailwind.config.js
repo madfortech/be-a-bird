@@ -11,10 +11,26 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                serif: ['Crimson Text'],
+                serif: ['sans-serif'],
             },
         },
+        screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+          },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    corePlugins: {
+        aspectRatio: false,
+    },
+
+    
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/aspect-ratio'),
+    ],
 };
