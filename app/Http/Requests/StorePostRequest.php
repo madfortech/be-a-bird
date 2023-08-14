@@ -23,7 +23,7 @@ class StorePostRequest extends FormRequest
     {
         return [
             'title' => 'required|string',
-            'media' => 'required|file|mimetypes:video/mp4,video/mpeg,video/quicktime,video/x-msvideo|max:512000',
+            'media' => 'required|file|mimetypes:video/mp4,video/mpeg,video/quicktime,video/x-msvideo',
             'description' => 'required|string',
         ];
     }

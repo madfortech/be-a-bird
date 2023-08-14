@@ -4,10 +4,6 @@
 @endsection
 @section('content')
 
-@php
-    $privacy = \App\Models\Privacy::find(1);
-@endphp
-
     <nav class="p-5 bg-orange-600 fixed left-0 right-0">
       <div class="container mx-auto">
           <ul class="flex flex-wrap-reverse">
@@ -90,13 +86,13 @@
         @endforeach
     </header>
 
-    <footer class="flex flex-row  justify-center p-25 bg-orange-300">
+    <footer class="flex flex-row p-25 bg-orange-300">
         <div class="w-7/12 min-w-full md:min-w-0 mx-auto my-7 border-2 rounded-lg">
             
-            <a href="{{ route('privacy.index') }}" class=" active:bg-gray-600">
+            <a href=" " class=" active:bg-gray-600">
                 privacy policy
             </a>
-            <a href="{{ route('terms.index') }}" class=" active:bg-gray-600">
+            <a href="" class=" active:bg-gray-600">
                 terms conditions
             </a>
             <a>

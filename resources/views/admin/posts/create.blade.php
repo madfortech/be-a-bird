@@ -24,6 +24,7 @@
                                 <x-input-label  for="title" :value="__('Title')"/>
                                 <x-text-input id="title" name="title" type="text" 
                                 placeholder="title"
+                                :value="old('title')"
                                 class="mt-1 block w-full"/>
                                 <x-input-error :messages="$errors->get('title')"
                                 class="mt-2" />
@@ -43,8 +44,10 @@
                                 <x-input-label for="description" :value="__('Description')"/>
                                 <textarea name="description" 
                                 class="block mt-1 w-full"
-                                id="description" cols="30" rows="3"
-                                placeholder="description here">
+                                id="description" cols="30" 
+                                rows="3"
+                                placeholder="description here"
+                                :value="old('description')">
 
                                 </textarea>
                                 <x-input-error :messages="$errors->get('description')" class="mt-2" />
